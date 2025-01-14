@@ -35,7 +35,7 @@ cout  << "profundidade com desconto da espessura da porta 1,5cm e 2,5cm distanci
     float montante (altura-mont); //aqui já com desconto,roda pé 10 é teto 4 base é chapel 3.
  
     cout <<"plano de corte:\n"<<endl;
-cout<<portas<<"-portas-"<< comprimento << " x " << altura<<endl;
+cout<<portas<<"-portas:"<< comprimento << " x " << altura<<endl;
 
 
  int portasInt = static_cast<int>(portas); 
@@ -44,32 +44,22 @@ cout<<portas<<"-portas-"<< comprimento << " x " << altura<<endl;
 
       switch (portasInt){
         case 1:
-            cout << "2-montante: " << profundidade << " x " << montante << endl;
-            break;
         case 2:
             cout << "2-montantes: " << profundidade << " x " << montante << endl;
             break;
         case 3:
-            cout << "3-montantes: " << profundidade << " x " << montante << endl;
-            break;
         case 4:
             cout << "3-montantes: " << profundidade << " x " << montante << endl;
             break;
         case 5:
-            cout << "4-montantes: " << profundidade << " x " << montante << endl;
-            break;
         case 6:
             cout << "4-montantes: " << profundidade << " x " << montante << endl;
             break;
         case 7:
-            cout << "5-montantes: " << profundidade << " x " << montante << endl;
-            break;
         case 8:
             cout << "5-montantes: " << profundidade << " x " << montante << endl;
             break;
         case 9:
-            cout << "6-montantes: " << profundidade << " x " << montante << endl;
-            break;
         case 10:
             cout << "6-montantes: " << profundidade << " x " << montante << endl;
             break;
@@ -77,7 +67,7 @@ cout<<portas<<"-portas-"<< comprimento << " x " << altura<<endl;
             cout << "Número de portas fora do intervalo esperado." << endl;
             break;
     }
-cout << "2-base é teto:" << profundidade << " x " << comp-desc << endl;
+cout << "2-base e teto:" << profundidade << " x " << comp-desc << endl;
 
 
     return 0;
